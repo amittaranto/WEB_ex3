@@ -145,10 +145,8 @@ var updateStatus = function() {
   var timeout = '';
   
   var moveColor = 'White';
-  firebase.database().ref('turn').set('White');
   if (game.turn() === 'b') {
     moveColor = 'Black';
-	firebase.database().ref('turn').set('Black');
   }
   
   // checkmate?
