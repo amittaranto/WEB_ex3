@@ -121,6 +121,8 @@
   firebase.initializeApp(config);
   firebase.database().ref('game_string').set('start');
   firebase.database().ref('logout_flag').set('False');
+  firebase.database().ref('player1').set('None');
+  firebase.database().ref('player2').set('None');
 </script>
 
 <script>
